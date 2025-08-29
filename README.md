@@ -1,4 +1,4 @@
-# FunnelStarter 🚀
+# FunnelStarter 
 
 FunnelStarter is a simple **ClickFunnels-style landing page template** built with **HTML & CSS**.  
 It’s designed to help you quickly launch a sales funnel or lead capture page.  
