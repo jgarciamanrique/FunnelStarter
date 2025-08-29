@@ -7,8 +7,8 @@ body {
 
 /* 🔹 TOP BANNER */
 .top-banner {
-  background: #000000; /* Black background */
-  color: #ffffff;      /* White text */
+  background: #000000;
+  color: #ffffff;
   text-align: center;
   font-weight: bold;
   padding: 12px 10px;
@@ -63,14 +63,14 @@ body {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 12px;
-  color: #0b1230; /* Dark text */
+  color: #0b1230;
 }
 
 /* 🔹 BLUE GRADIENT TEXT */
 .gradient-text {
   text-transform: uppercase;
   font-weight: 900;
-  background: linear-gradient(to bottom, #1a4aa6, #1f7be8); /* Dark blue → light blue */
+  background: linear-gradient(to bottom, #1a4aa6, #1f7be8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -78,13 +78,13 @@ body {
 
 /* 🔹 RIGHT FORM */
 .signup-form {
-  flex: 1.1; /* Slightly narrower */
+  flex: 1.1;
   background: #ffffff;
   padding: 35px;
   border-radius: 15px;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
   text-align: center;
-  min-width: 340px; /* Slightly less wide */
+  min-width: 340px;
 }
 
 .signup-form h3 {
@@ -165,4 +165,56 @@ body {
   font-size: 0.9rem;
   color: #d1d5db;
   font-style: italic;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .signup-text h2 {
+    font-size: 32px;
+  }
+  .signup-text p,
+  .signup-text ul li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .signup-text {
+    text-align: center;
+  }
+  .signup-form {
+    min-width: 100%;
+    margin-top: 20px;
+  }
+  .signup-text h2 {
+    font-size: 28px;
+  }
+  .signup-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-banner {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .signup-text h2 {
+    font-size: 24px;
+  }
+  .signup-text p,
+  .signup-text ul li {
+    font-size: 16px;
+  }
+  .signup-form {
+    padding: 20px;
+  }
+  .signup-form button {
+    font-size: 18px;
+    padding: 14px;
+  }
 }
